@@ -6,7 +6,7 @@ const VideoSchema = new Schema(
   {
     title: {
       type: String,
-      minlength: [3, 'Must be three characters long']
+      minlength: [1, 'Must be one characters long']
     },
     description: {
       type: String,
