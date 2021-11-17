@@ -35,6 +35,7 @@ exports.getVideo = asyncHandler(async (req, res, next) => {
 // @route   PUT /api/v1/video
 // @access  Private
 exports.videoUpload = asyncHandler(async (req, res, next) => {
+  console.log(req)
   let videoModel = await Video.create({ userId: req.user._id })
 
   if (!req.files) {
